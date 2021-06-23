@@ -62,7 +62,7 @@ export function Home() {
                     renderItem={({ item }) => (
                         <Appointment data={item} />
                     )}
-                    itemSeparatorComponent={() => <ListDivider/>}
+                    ItemSeparatorComponent={() => <ListDivider/>}
                     style={styles.matches}
                     showsVerticalScrollIndicator={false}
                 />
