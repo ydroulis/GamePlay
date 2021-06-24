@@ -8,7 +8,7 @@ type Props = {
     urlImage: string;
 }
 
-export default function Profile({ urlImage }: Props) {
+export function Avatar({ urlImage }: Props) {
     const { secondary50, secondary70 } = theme.colors;
     return (
         <LinearGradient style={styles.container} colors={[secondary50, secondary70]}>
