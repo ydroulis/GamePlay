@@ -25,6 +25,31 @@ const guilds = [
         icon: 'image.png',
         owner: true
     },
+    {
+        id: '3',
+        name: 'Galera do Game',
+        icon: 'image.png',
+        owner: true
+    },
+    {
+        id: '4',
+        name: 'Galera do Game',
+        icon: 'image.png',
+        owner: true
+    },
+    {
+        id: '5',
+        name: 'Galera do Game',
+        icon: 'image.png',
+        owner: true
+    },
+    {
+        id: '6',
+        name: 'Galera do Game',
+        icon: 'image.png',
+        owner: true
+    },
+
 ]
 
     return (
@@ -35,9 +60,11 @@ const guilds = [
                 renderItem={({ item }) => (
                     <Guild data={item} onPress={() => handleGuildSelect(item)}/>
                 )}
+                contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
                 showsVerticalScrollIndicator={false}
-                ItemSeparatorComponent={() => <ListDivider/>}
+                ItemSeparatorComponent={() => <ListDivider isCentered/>}
                 style={styles.guilds}
+                ListHeaderComponent={() => <ListDivider isCentered/>}
             />
         </View>
     )
